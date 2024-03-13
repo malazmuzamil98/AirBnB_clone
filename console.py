@@ -5,6 +5,8 @@ HBNBCommand - Command Interpreter for HBNB Application
 
 
 import cmd
+
+
 class HBNBCommand(cmd.Cmd):
     """
     HBNBCommand - Command Interpreter for HBNB Application
@@ -68,16 +70,14 @@ class HBNBCommand(cmd.Cmd):
         elif args < 2:
             print("** instance id missing **")
             return
-        else:
-            key = "{}.{}".format(args[0], args[1])
-            if key in storage.all()
-                del storage.all()[key]
-            storage.save()
-            return
-            else:
-                print("** instance id missing **")
-
-    
+        # else:
+        #     key = "{}.{}".format(args[0], args[1])
+        #     if key in storage.all():
+        #         del storage.all()[key]
+        #         storage.save()
+        #     return
+        #     else:
+        #     print("** instance id missing **")
 
 
 if __name__ == '__main__':
