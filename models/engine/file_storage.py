@@ -29,7 +29,7 @@ class FileStorage:
     def reload(self):
         """desrialize the objects"""
         from models.base_model import BaseModel
-    
+
         Models = {
             'BaseModel': BaseModel
         }
@@ -42,4 +42,3 @@ class FileStorage:
                     self.new(def_class(**desrial_values))
         except FileNotFoundError:
             pass
-        
